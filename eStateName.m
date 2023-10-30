@@ -94,6 +94,29 @@ classdef(Enumeration) eStateName < uint8
       DATE_FORMAT_YYYYMMDD (91)
       SPEED_LIMITER_ON (92)
       SPEED_LIMITER_OFF (93)
+      CONNECTIVITY_BLUETOOTH (94)
+      CONNECTIVITY_PHONEPAIRING (95)
+      CONNECTIVITY_HEADSETPAIRING (96)
+      CONNECTIVITY_HEADSETTYPE (97)
+      CONNECTIVITY_BLUETOOTH_ON (98)
+      CONNECTIVITY_BLUETOOTH_OFF (99)
 
+   end
+   methods (Static = true)
+       function retVal = getDataScope()
+          % GETDATASCOPE Specifies whether generated code imports or exports this type.
+          % Return one of:
+          % 'Auto':     define type in model_types.h, or import if header file specified
+          % 'Exported': define type in a generated header file
+          % 'Imported': import type definition from specified header file
+          % If you do not define this method, DataScope is 'Auto' by default.
+          retVal = 'Exported';
+        end
+    
+        function retVal = getHeaderFile()
+          % GETHEADERFILE Specifies the file that defines this type in generated code.
+          % The method getDataScope determines the significance of the specified file.
+          retVal = 'exported_enum_type.h';
+        end
    end
 end
