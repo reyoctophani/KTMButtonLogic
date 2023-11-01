@@ -100,7 +100,10 @@ classdef(Enumeration) eStateName < uint8
       CONNECTIVITY_HEADSETTYPE (97)
       CONNECTIVITY_BLUETOOTH_ON (98)
       CONNECTIVITY_BLUETOOTH_OFF (99)
-
+      QUICKSHIFTER_OFF (100)
+      QUICKSHIFTER_ON (101)
+      HEADSETTYPE_CORDED (102)
+      HEADSETTYPE_BLUETOOTH (103)
    end
    methods (Static = true)
        function retVal = getDataScope()
