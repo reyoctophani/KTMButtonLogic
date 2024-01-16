@@ -104,6 +104,54 @@ classdef(Enumeration) eStateName < uint8
       QUICKSHIFTER_ON (101)
       HEADSETTYPE_CORDED (102)
       HEADSETTYPE_BLUETOOTH (103)
+      SET_SERVICE (104)
+      SET_SERVICE_NEXTSERVICE (105)
+      SET_SERVICE_DISTANCE_KM (106)
+      SET_SERVICE_DISTANCE_MI (107)
+      SET_SERVICE_MONTHS_MM (108)
+      SET_SERVICE_SOFTWARE_VERSION (109)
+      CURSOR_ON_KM (110)
+      CURSOR_ON_MI (111)
+      CURSON_ON_DATE (112)
+      FAVORITES_TRIP_DISTANCE_1 (113)
+      FAVORITES_AVERAGE_SPEED_1 (114)
+      FAVORITES_AVERAGE_FUEL_CONS_1 (115)
+      FAVORITES_TRIP_TIME_1 (116)
+      FAVORITES_TRIP_DISTANCE_2 (117)
+      FAVORITES_AVERAGE_SPEED_2 (118)
+      FAVORITES_AVERAGE_FUEL_CONS_2 (119)
+      FAVORITES_TRIP_TIME_2 (120)
+      FAVORITES_FUEL_RANGE (121)
+      FAVORITES_DATE (122)
+      FAVORITES_BATTERY (123)
+      FAVORITES_WATER_TEMPERATURE (124)
+      FAVORITES_ODOMETER (125)
+      FAVORITES_SLOT_1 (126)
+      FAVORITES_SLOT_2 (127)
+      FAVORITES_SLOT_3 (128)
+      FAVORITES_SLOT_4 (129)
+      MOTORCYCLE_RIDEMODE (130)
+      MOTORCYCLE_ABS (131)
+      MOTORCYCLE_MTC (132)
+      MOTORCYCLE_LAUNCHCONTROL (133)
+      MC_RIDEMODE_TRACK (134)
+      MC_RIDEMODE_STREET (135)
+      MC_RIDEMODE_RAIN (136)
+      MC_DEACTIVATE_KILLSWITCH (137)
+      MC_CLOSETHROTTLE (138)
+      ABS_ROAD (139)
+      ABS_SUPERMOTO (140)
+      MTCMODE_TC (141)
+      MTCMODE_MTC (142)
+      MTCMODE_OFF (143)
+      MTCMODE_ON (144)
+      MTC_KEEP_OFF_PRESS (145)
+      MTC_KEEP_ON_PRESS (146)
+      MTC_OFF_RELEASE (147)
+      MTC_ON_RELEASE (148)
+      MC_LAUNCHCONTROL_ON (149)
+      MC_LAUNCHCONTROL_OFF (150)
+
    end
    methods (Static = true)
        function retVal = getDataScope()
@@ -119,7 +167,14 @@ classdef(Enumeration) eStateName < uint8
         function retVal = getHeaderFile()
           % GETHEADERFILE Specifies the file that defines this type in generated code.
           % The method getDataScope determines the significance of the specified file.
-          retVal = 'exported_enum_type.h';
+          retVal = 'exported_enum_type.h';          
+        end
+        function retVal = addClassNameToEnumNames()
+        % ADDCLASSNAMETOENUMNAMES Specifies whether to add the class name
+        % as a prefix to enumeration member names in generated code.
+        % Return true or false.
+        % If you do not define this method, no prefix is added.
+            retVal = false;
         end
    end
 end
