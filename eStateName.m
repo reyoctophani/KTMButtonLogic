@@ -151,6 +151,15 @@ classdef(Enumeration) eStateName < uint8
       MTC_ON_RELEASE (148)
       MC_LAUNCHCONTROL_ON (149)
       MC_LAUNCHCONTROL_OFF (150)
+      SHIFT_LIGHT_ON_OFF (151)
+      SL_RPM1 (152)
+      SL_RPM2 (153)
+      ODO_MSG_KM (154)
+      ODO_MSG_MILES (155)
+      SHIFT_LIGHT_ON (156)
+      SHIFT_LIGHT_OFF (157) 
+      SL_SET_RPM1 (158)
+      SL_SET_RPM2 (159)
 
    end
    methods (Static = true)
