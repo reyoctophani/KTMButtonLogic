@@ -28,7 +28,7 @@ classdef(Enumeration) eStateName < uint8
       TRIP_2_SET_AS_OVERVIEW (25)
       TRIP_2_RESET_TRIP (26)
       SPEED_LIMITER (27)
-      MODE (28)
+      MODE_CC (28)
       SPEED_LIMITER_ONCHECK (29)
       SPEED_LIMITER_OFFCHECK (30)
       SPEED_LIMITER_MODE (31)
