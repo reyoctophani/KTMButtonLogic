@@ -182,7 +182,8 @@ classdef(Enumeration) eStateName < uint8
       QS_DOWN_HEATEDGRIPS (179)
       QS_DOWN_CRUISECONTROL (180)
       QS_DOWN_BIKEINFO (181)
-
+      WARNINGS_MENU (182)
+      AUDIO_SUB_MENU (183)
    end
    methods (Static = true)
        function retVal = getDataScope()
