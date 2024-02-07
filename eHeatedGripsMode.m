@@ -1,8 +1,8 @@
 classdef(Enumeration) eHeatedGripsMode < uint8
    enumeration
       OFF (0)
-      MAXIMUM  (1)
+      MINIMUM (1)
       MEDIUM (2)
-      MINIMUM (3)
+      MAXIMUM (3)
    end
 end
