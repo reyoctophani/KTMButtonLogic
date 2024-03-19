@@ -214,6 +214,7 @@ classdef(Enumeration) eStateName < uint8
       BT_HEADSET_DEL_PAIRING (212)
       BT_PHONE_DVC_LIST (213)
       BT_HEADSET_DVC_LIST (214)
+      HCU_GRIP_HEAT_LVL_CHK (215)
    end
    methods (Static = true)
        function retVal = getDataScope()
