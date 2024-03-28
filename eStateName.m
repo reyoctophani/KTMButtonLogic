@@ -218,6 +218,7 @@ classdef(Enumeration) eStateName < uint8
       BT_HEADSET_DEL_PAIRING_WAIT (216)
       BT_PHONE_DEL_PAIRING_WAIT (217)
       POPUP_REG_APP_REPLY (218)
+      RESET_LAPS_RND_TMR (219)
    end
    methods (Static = true)
        function retVal = getDataScope()
