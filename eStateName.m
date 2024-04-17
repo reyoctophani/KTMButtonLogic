@@ -219,6 +219,7 @@ classdef(Enumeration) eStateName < uint8
       BT_PHONE_DEL_PAIRING_WAIT (217)
       POPUP_REG_APP_REPLY (218)
       RESET_LAPS_RND_TMR (219)
+      CONSUMPTION_L_PER_100MI (220)
    end
    methods (Static = true)
        function retVal = getDataScope()
