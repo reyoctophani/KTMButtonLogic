@@ -220,6 +220,8 @@ classdef(Enumeration) eStateName < uint8
       POPUP_REG_APP_REPLY (218)
       RESET_LAPS_RND_TMR (219)
       CONSUMPTION_L_PER_100MI (220)
+      CAN_ERROR (221)
+      CAN_NORMAL (222)
    end
    methods (Static = true)
        function retVal = getDataScope()
