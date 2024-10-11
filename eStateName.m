@@ -231,6 +231,12 @@ classdef(Enumeration) eStateName < uint8
       EXTRA_FN_AUDIO_WAIT (229)
       EXTRA_FN_NAVIGATION_WAIT (230)
       EXTRA_FN_REMOTE_CTRL_WAIT (231)
+      BT_PHONE_PAIRING_NEW_WAIT (232)
+      WATER_TEMPERATURE_WAIT (233)
+      FUEL_RANGE_WAIT (234)
+      BATTERY_WAIT (235)
+      ODOMETER_WAIT (236)
+      SERVICE_WAIT (237)
    end
    methods (Static = true)
        function retVal = getDataScope()
