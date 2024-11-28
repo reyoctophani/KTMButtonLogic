@@ -238,6 +238,7 @@ classdef(Enumeration) eStateName < uint8
       ODOMETER_WAIT (236)
       SERVICE_WAIT (237)
       BT_HDST_PAIRING_NEW_WAIT (238)
+      NAV_VOL_SET_WAIT (239)
    end
    methods (Static = true)
        function retVal = getDataScope()
