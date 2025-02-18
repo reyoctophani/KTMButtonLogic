@@ -14,6 +14,22 @@
 # Packaged app and toolbox files
 *.mlappinstall
 *.mltbx
+*.js
+*.tif
+*.tlc
+*.tlh
+*.gif
+*.svg
+*.png
+*.zip
+*.obj
+*.rsp
+*.tmw
+*.woff
+*.rights
+*.css
+*.cur
+*.dmr
 
 # Deployable archives
 *.ctf
@@ -22,9 +38,18 @@
 helpsearch*/
 
 # Code generation folders
-slprj/
+simCache/slprj/_sfprj/
+simCache/slprj/modeladvisor/
+simCache/slprj/sim/
+simCache/slprj/_jitprj/
+slprj/ert/_htmllib/
+slprj/ert/_sharedutils/*.mat
+codeGen/slprj/ert/_sharedutils/*.mat
+codeGen/ButtonLogic_ert_rtw/tmwinternal/
+codeGen/slprj/ert/ButtonLogic/tmwinternal/
 sccprj/
-codegen/
+codeGen/ButtonLogic_ert_rtw/html/
+codeGen/ButtonLogic_ert_rtw/*.mat
 
 # Cache files
 *.slxc
